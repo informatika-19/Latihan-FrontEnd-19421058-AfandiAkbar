@@ -52,6 +52,20 @@
             <q-item-label>Tampil Kegiatan</q-item-label>
           </q-item-section>
         </q-item>
+    <q-item
+          clickable
+          active-class
+          v-ripple
+          exact
+          :to="{ name: 'inputKegiatan' }"
+        >
+          <q-item-section avatar>
+            <q-icon name="create" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Input Kegiatan</q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </q-drawer>
 

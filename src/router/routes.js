@@ -4,7 +4,10 @@ const routes = [
     path: '/',
     component: () => import('layouts/MyLayout.vue'),
     children: [
-      { path: '', name: 'tampilKegiatan', component: () => import('pages/TampilKegiatan.vue') }
+      { path: '', name: 'tampilKegiatan', component: () => import('pages/TampilKegiatan.vue') },
+      { path: 'inputkegiatan', name: 'inputKegiatan', component: () => import('pages/InputKegiatan.vue') },
+      { path: 'edit/:id', name: 'editKegiatan', component: () => import('pages/EditKegiatan.vue') },
+      { path: 'detail/:id', name: 'tampilDetail', component: () => import('pages/TampilDetail.vue') }
     ]
   },
 
